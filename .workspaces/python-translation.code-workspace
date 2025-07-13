@@ -1,0 +1,15 @@
+{
+    "folders": [
+        {
+            "name": "Python Translation",
+            "path": "../python-translation",
+            "cwd": "${workspaceFolder}",
+        },
+    ],
+    "settings": {
+        "files.exclude": {
+            "project.toe": true
+        },
+        "workbench.colorTheme": "Default Dark Modern",
+    },
+}

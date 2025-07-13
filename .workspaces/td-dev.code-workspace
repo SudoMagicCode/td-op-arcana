@@ -1,0 +1,28 @@
+{
+    "folders": [
+        {
+            "name": "External Python Libs",
+            "path": "../TouchDesigner/ext-python",
+            "cwd": "${workspaceFolder}",
+        },
+        {
+            "name": "TD Python",
+            "path": "../TouchDesigner/td-python",
+            "cwd": "${workspaceFolder}",
+        }
+    ],
+    "settings": {
+        "files.exclude": {
+            "project.toe": true
+        },
+        "python.analysis.autoSearchPaths": true,
+        "python.autoComplete.extraPaths": [
+            "../TouchDesigner/td-python",
+        ],
+        "python.analysis.extraPaths": [
+            "../TouchDesigner/td-python",
+        ],
+        "python.defaultInterpreterPath": "C:/Program Files/Derivative/TouchDesigner.2025.30280/bin/python.exe",
+        "workbench.colorTheme": "Default Dark Modern",
+    },
+}
