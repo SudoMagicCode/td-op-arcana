@@ -1,7 +1,10 @@
 import googletrans
 import json
 import os
+import asyncio
 
+translator = googletrans.Translator()
+target_languages = ['es']
 root_dir: str = "../TouchDesigner/tox/examples"
 op_dirs: list[str] = [
     "COMP", "CHOP", "TOP", "SOP", "POP", "MAT", "DAT"
@@ -34,12 +37,17 @@ def create_translations(sourceFile: str, outputFile: str) -> None:
         translation_file.write(output_content)
 
 
-def generate_translations(sourceFile: str) -> dict:
+async def generate_translations(sourceFile: str) -> dict:
     translation_dict = {}
 
     with open(sourceFile, 'r') as source:
         data: str = source.read()
-        print(data)
+        en: str = data
+        translation_dict['en'] = en
+        for each in target_languages:
+            translation = translator.translate(data, each)
+            await translation
+            translation_dict[each] = translation
 
     return translation_dict
 
