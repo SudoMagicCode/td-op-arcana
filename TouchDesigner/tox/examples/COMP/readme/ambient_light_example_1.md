@@ -1,6 +1,6 @@
 # Heading 1
 
-* There's somet text that goes here
+* There's some text that goes here
 * Another bullet point
 
 ## Heading 2
