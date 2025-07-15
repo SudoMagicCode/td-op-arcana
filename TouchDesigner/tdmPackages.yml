@@ -2,9 +2,9 @@ name: ""
 tdVersion: ""
 tdPackages:
     - package: github.com/SudoMagicCode/td-comp-icon
-      releaseTag: v1.0.6
+      releaseTag: v1.1.1
     - package: github.com/SudoMagicCode/TD-TOX-Saver
       releaseTag: v1.0.9
     - package: github.com/SudoMagicCode/td-annotation-formatter
-      releaseTag: v0.0.3
+      releaseTag: v0.0.4
 pythonRequirements: []
